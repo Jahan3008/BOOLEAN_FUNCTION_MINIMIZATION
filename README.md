@@ -39,11 +39,10 @@ Hardware – PCs, Cyclone II , USB flasher
 */
 ```
 ```
-module ha(a,b,sum,carry);
-input a,b;
-output sum,carry;
-assign sum= (a ^ b);
-assign carry= ( a & b);
+module funct1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
 endmodule
 ```
 
